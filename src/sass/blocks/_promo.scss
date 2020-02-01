@@ -1,0 +1,57 @@
+.promo {
+	min-height: 673px;
+	padding-top: 140px;
+	padding-bottom: 30px;
+	background-color: #fff;
+	.title {
+		margin-top: -15px;
+		padding-right: 10px;
+		display: inline-block;
+		vertical-align: top;
+		width: 376px;
+		line-height: 60px;
+		text-align: left;
+		color: #000000;
+		&__item_weight {
+			font-weight: 500;
+		}
+		&__item_color {
+			color: $main-color;
+		}
+	}
+	&__descr {
+		display: inline-block;
+		max-width: 552px;
+		margin-left: 4px;
+		// vertical-align: text-top;
+	}
+	&__text {
+		margin-bottom: 47px;
+		font-size: 16px;
+		// line-height: 24px;
+		text-align: left;
+		color: #000000;
+		// p {
+		// 	margin: 0;
+		// 	line-height: 24px;
+		// }
+		// span {
+		// 	font-weight: 500;
+		// }
+		.span {
+			font-weight: 500;
+		}
+		.span_light {
+			font-weight: 300;
+		}
+		&_norm {
+			line-height: 24px;
+			margin: 0;
+		}
+		&_lh {
+			font-weight: 400;
+			line-height: 18px;
+			margin-bottom: 11px;
+		}
+	}
+}

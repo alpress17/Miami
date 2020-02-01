@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pulse</title>
+	<!-- <link rel="shortcut icon" href="icons/favicon.ico" type="image/png"> -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	
+	<section class="promo">
+		<div class="container">
+			<header class="header">
+				<a href="#" class="header__logo">
+					<img src="icons/logo.png" alt="logo">
+				</a>
+				<div class="header__official">
+					Официальный представитель
+					<span>Garmin, Polar, Suunto</span>
+				</div>
+				<div class="header__contacts">
+					<a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
+					<button data-modal="consultation" class="button">заказать звонок</button>
+				</div>
+			</header>
+			<div class="promo__wrapper">
+				<h1 class="promo__header">Подбор пульсометра</h1>
+				<h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+				<div class="promo__icons">
+					<div class="promo__icon">
+						<img src="icons/first-screen_ico1.png" alt="ico1">
+						Время подбора: 10 минут
+					</div>
+					<div class="promo__icon">
+						<img src="icons/first-screen_ico2.png" alt="ico2">
+						Бесплатная доставка
+					</div>
+					<div class="promo__icon">
+						<img src="icons/first-screen_ico3.png" alt="ico3">
+						Ответим на все вопросы
+					</div>
+				</div>
+				<button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+				<div class="promo__link">
+					или
+					<a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="container">
+			<h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
+			<div class="advantages__wrapper">
+				<div class="advantages__item">
+					<img src="icons/advantage_ico1.png" alt="Cup" class="advantages__icon">
+					<div class="advantages__subtitle">Делимся опытом</div>
+					<div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, 
+						так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
+				</div>
+				<div class="advantages__item">
+					<img src="icons/advantage_ico2.png" alt="Heart" class="advantages__icon">
+					<div class="advantages__subtitle">Заботимся о здоровье</div>
+					<div class="advantages__descr">Мы работаем для того,<br> 
+						чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
+					</div>
+				</div>
+				<div class="advantages__item">
+					<img src="icons/advantage_ico3.png" alt="Sneakers" class="advantages__icon">
+					<div class="advantages__subtitle">Учим бегать</div>
+					<div class="advantages__descr">Помогаем с обучением 
+						правильной технике бега! 
+						Дружим с крупнейшей школой бега в России -
+							<a href="#">I LOVE RUNNING.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consultation">
+		<div class="container">
+			<h2 class="title title_left">Получите бесплатную консультацию<br>
+				по подбору пульсометра 
+			</h2>
+			<div class="consultation__descr">Просто заполните форму заявки<br>
+				и мы перезвоним вам в течении 10 минут
+			</div>
+			<form id="consultation-form" class="feed-form" action="#">
+				<input name="name" required placeholder="Ваше имя" type="text">
+				<input name="phone" required placeholder="Ваш телефон">
+				<input name="email" required placeholder="Ваше E-mail" type="email">
+				<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="carousel">
+		<div class="container">
+			<h2>Polar Pulsometer</h2>
+			<div class="carousel__inner">
+				<div>
+					<img src="img/catalog/Polar-Ignite-Pink-Rose-Gold-S-H10.webp" alt="slide_1">
+				</div>
+				<div>
+					<img src="img/catalog/Polar-Vantage-V-Black-M-L.webp" alt="slide_2">
+				</div>
+				<div>
+					<img src="img/catalog/Polar-Vantage-M-White.webp" alt="slide_3">
+				</div>
+				<div>
+					<img src="img/catalog/Polar-Vantage-V-Orange.webp" alt="slide_3">
+				</div>
+				<div>
+					<img src="img/catalog/Polar-Vantage-M-Red.webp" alt="slide_3">
+				</div>
+				<div>
+					<img src="img/catalog/Polar-Vantage-V-Black-Titan-EMEA_LATA.webp" alt="slide_3">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="catalog" id="catalog">
+		<div class="container">
+			<h2 class="title">Каталог пульсометров</h2>
+			<ul class="catalog__tabs">
+				<li class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
+				<li class="catalog__tab"><div>для бега</div></li>
+				<li class="catalog__tab"><div>для триатлона</div></li>
+			</ul>
+			<div class="catalog__content fade catalog__content_active">
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-White.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M White (M/L)</div>
+							<div class="catalog-item__descr">Новые мульти-спортивные GPS-часы с улучшенным измерением пульса</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Размеры (ШхВхТ) 46 x 46 x 12.5 мм
+							</li>
+							<li>
+								Поддержка платформ Android 4.3, iOS 8.0
+							</li>
+							<li>
+								Время в режиме ожидания 30 дней
+							</li>
+							<li>
+								Водонепроницаемость WR30
+							</li>
+							<li>
+								Защитное стекло Corning Gorilla Glass3
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">24 750 &#8381; 
+							</div>
+							<div class="catalog-item__new-price">19 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-Blue.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Blue (M/L)</div>
+							<div class="catalog-item__descr">Бросьте вызов своим возможностям с Polar Vantage M </div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Функция Running Index
+							</li>
+							<li>
+								Функция HeartTouch
+							</li>
+							<li>
+								Показатели плавания
+							</li>
+							<li>
+								Дневник тренировок
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">24 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">19 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-Green.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Green PET BLK</div>
+							<div class="catalog-item__descr">Универсальные часы для бега и различных видов спорта с GPS</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">25 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">20 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-Red.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Red (M/L)</div>
+							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">24 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">19 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-V-Black-M-L.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Black (M/L)</div>
+							<div class="catalog-item__descr">Новые мульти-спортивные GPS-часы с улучшенным измерением пульса</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">24 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">19 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-M430-white.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Пульсометр Polar M430 white</div>
+							<div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">4 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">4 500 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__content fade">
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-Red.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Red (M/L)</div>
+							<div class="catalog-item__descr">Новые мульти-спортивные GPS-часы с улучшенным измерением пульса</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">24 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">19 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+			</div>
+			<div class="catalog__content fade">
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-M-Green.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage M Green (M/L) PET BLK</div>
+							<div class="catalog-item__descr">Бросьте вызов своим возможностям с Polar Vantage M — универсальными часами для бега и различных видов спорта</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Контроль частоты сердцебиения
+							</li>
+							<li>
+								Визуальное отображение зон тренировок
+							</li>
+							<li>
+								Ортостатический тест
+							</li>
+							<li>
+								Термометр
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">25 750 &#8381;
+							</div>
+							<div class="catalog-item__new-price">20 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+				<div class="catalog-item catalog__catalog-item"> <!-- catalog__catalog-item  - класс для позиционирования блока catalog-item-->
+					<div class="catalog-item__wrapper">
+						<div class="catalog-item__content catalog-item__content_active">
+							<img src="img/catalog/Polar-Vantage-V-Black-Titan-EMEA_LATA.webp" alt="pulsometr" class="catalog-item__img">
+							<div class="catalog-item__subtitle">Polar Vantage V Black HR EMEA/LATA</div>
+							<div class="catalog-item__descr">Тренируйтесь с умом и откройте в себе победителя с Polar Vantage V</div>
+							<a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
+						</div>
+						<ul class="catalog-item__list">
+							<li>
+								Вы услышите звуковое оповещение о нужном пульсе во время тренировки;
+							</li>
+							<li>
+								Вы увидите информативный графический индикатор целевых тренировочных зон пульса;
+							</li>
+							<li>
+								Также Вы увидите информацию о расходе калорий за тренировку;
+							</li>
+							<li>
+								Вы сможете посмотреть данные по 10 тренировкам.
+							</li>
+						</ul>
+						<a href="#" class="catalog-item__back">назад</a>
+					</div>
+					<hr>
+					<div class="catalog-item__footer">
+						<div class="catalog-item__prices">
+							<div class="catalog-item__old-price">42 500 &#8381;
+							</div>
+							<div class="catalog-item__new-price">39 990 &#8381;</div>
+						</div>
+						<button class="button button_mini">КУПИТЬ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="feed">
+		<div class="container">
+			<h2 class="title">отзывы клиентов</h2>
+			<div class="feed__wrapper">
+				<div class="feed__item">
+					<img src="img/feed_1.webp" alt="feed1" class="feed__img">
+					<div class="feed__block">
+						<div class="feed__userName">Ирина Иванченко</div>
+						<div class="feed__marathon">2 полумарафона</div>
+						<div class="feed__descr">
+							<p>
+								Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности. Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
+							</p>
+							<p>
+								Новые цели - новый гаджет!
+							</p>
+							<p>
+								Спасибо, RunSmart!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="feed__item">
+					<img src="img/feed_2.webp" alt="feed2" class="feed__img">
+					<div class="feed__block">
+						<div class="feed__userName">Иван Сёмочкин</div>
+						<div class="feed__marathon">1 полумарафон</div>
+						<div class="feed__descr">
+							<p>
+								Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. 
+								Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
+							</p>
+							<p>
+								С ними подготовился к своему первому полумарафону! Спасибо!!!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="feed__item">
+					<img src="img/feed_3.webp" alt="feed3" class="feed__img">
+					<div class="feed__block">
+						<div class="feed__userName">Юлия Дашкина</div>
+						<div class="feed__marathon">2 полумарафона</div>
+						<div class="feed__descr">
+							<p>
+								Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
+							</p>
+							<p>
+								Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
+							</p>
+							<p>
+								Спасибо!!!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2249.244886479016!2d37.5516126!3d55.6847301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cec7de38907%3A0x5000d9b484224a35!2z0KTQuNGC0L3QtdGBINC00L7QvA!5e0!3m2!1sru!2sru!4v1580316578106!5m2!1sru!2sru"  style= "width:100%; height:630px; border:0" allowfullscreen=""></iframe>
+		</div>
+		<div class="footer__info">
+			<address class="footer__addr">Москва, Нахимовский пр., д.56</address>
+			<a class="footer__phone" href="tel:+74999228974" >+7 (499) 922-89-74</a>
+			<div class="footer__social">
+				<a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+				<a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+				<a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form class="feed-form feed-form_mt25 feed-form_mobile" action="#">
+				<input placeholder="Ваше имя" type="text" name="name">
+				<input placeholder="Ваш телефон" name="phone">
+				<input placeholder="Ваше E-mail" type="email" name="email">
+				<button class="button button_submit">Заказать консультацию</button>
+			</form>
+		</div>
+		<div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Ваш заказ:</div>
+			<div class="modal__descr">Пульсометр Polar</div>
+			<form class="feed-form feed-form_mt25 feed-form_mobile" action="#">
+				<input required placeholder="Ваше имя" type="text" name="name">
+				<input required placeholder="Ваш телефон" name="phone">
+				<input required placeholder="Ваше E-mail" type="email" name="email">
+				<button class="button button_submit">Купить</button>
+			</form>
+		</div>
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами 
+				в ближайшее время!</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,16 +1,19 @@
 .promo {
 	min-height: 673px;
 	padding-top: 140px;
-	padding-bottom: 30px;
+	padding-bottom: 151px;
 	background-color: #fff;
+	&__wrapper {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 	.title {
 		margin-top: -15px;
 		padding-right: 10px;
 		display: inline-block;
 		vertical-align: top;
-		width: 376px;
+		min-width: 371px;
 		line-height: 60px;
-		text-align: left;
 		color: #000000;
 		&__item_weight {
 			font-weight: 500;
@@ -20,38 +23,46 @@
 		}
 	}
 	&__descr {
-		display: inline-block;
-		max-width: 552px;
-		margin-left: 4px;
-		// vertical-align: text-top;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-left: 10px;
+		margin-top: -7px;
 	}
 	&__text {
-		margin-bottom: 47px;
 		font-size: 16px;
-		// line-height: 24px;
+		line-height: 24px;
 		text-align: left;
 		color: #000000;
-		// p {
-		// 	margin: 0;
-		// 	line-height: 24px;
-		// }
-		// span {
-		// 	font-weight: 500;
-		// }
-		.span {
+		span {
 			font-weight: 500;
 		}
-		.span_light {
-			font-weight: 300;
+		&:nth-child(1) {
+			margin-left: 20px;
 		}
-		&_norm {
-			line-height: 24px;
-			margin: 0;
+		&:nth-child(3) {
+			margin-left: 15px;
 		}
-		&_lh {
-			font-weight: 400;
-			line-height: 18px;
-			margin-bottom: 11px;
+		.custom-counter {
+			margin: 20px 0 45px 0;
+			padding-right: 10px;
+			padding-left: 0;
+			list-style-type: none;
+			p {
+				margin-bottom: 0;
+				margin-left: 20px;
+				line-height: 16px;
+			}
+			li{
+				counter-increment: step-counter;
+				// list-style-type: decimal;
+				&:before {
+					content:  counter(step-counter)".";
+					margin-right: 5px;
+					font-weight: 300;
+					padding: 0;
+				}
+			}
 		}
 	}
 }

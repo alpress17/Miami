@@ -32,8 +32,6 @@
 	}
 	nav {
 		margin-top: 580px;
-		margin-left: 10px;
-		margin-right: 9px;
 		.menu {
 			padding: 0;
 			margin: 0;
@@ -41,6 +39,9 @@
 			flex-direction: row;
 			justify-content: space-between;
 			list-style-type: none;
+			&__item {
+				line-height: 11px;
+			}
 			a {
 				font-size: 16px;
 				font-weight: 500;

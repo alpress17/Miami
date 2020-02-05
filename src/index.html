@@ -284,24 +284,26 @@
 			</div>
 
 			<div class="contact__wrapper">
-				<div class="contact__item">
+				<div class="contact__column">
 					<div class="contact__mail">Hello@miami.com</div>
 					<div class="contact__phones">
-						8 800 678 78 78 <br>
-						8 800 700 98 98
+						<span class="span_lh60">
+							<p>8 800 678 78 78</p>
+						</span>
+						<p>8 800 700 98 98</p>
 					</div>
 					<div class="contact__adress">
-						400 first ave. n. <br>
+						<span class="span_lh60">400 first ave. n.</span> <br>
 						suite 700 <br>
 						Minneapolis, MN 55401
 					</div>
 				</div>
-				<div class="contact__item">
-					<form id="consultation-form" class="feed-form" action="#">
-						<input name="name" required placeholder="Name" type="text">
-						<input name="email" required placeholder="Email" type="email">
-						<input name="text" required placeholder="Message" type="text">
-						<button class="button button_submit">Write to us</button>
+				<div class="contact__column">
+					<form id="contact-form" class="feed-form" action="#">
+						<input name="name" required placeholder="Name" type="text" maxlength="40">
+						<input name="email" required placeholder="Email" type="email" maxlength="40">
+						<textarea name=" message" required placeholder="Message" type="text" maxlength="500""></textarea>
+						<button class=" button button_submit">Write to us</button>
 					</form>
 				</div>
 			</div>

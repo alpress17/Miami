@@ -47,10 +47,10 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Didot';
     src: local('DidotElder BoldItAlt'), local('DidotElder-BoldItAlt'),
         url('../fonts/DidotElder-BoldItAlt.ttf') format('PostScript');
     font-weight: 700;
-    font-style: normal;
-}
+    font-style: normal; */
+/* } */

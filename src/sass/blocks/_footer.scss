@@ -1,0 +1,25 @@
+.footer {
+	min-height: 540px;
+	background: url("../img/bg_footer.jpg") center (center / cover) no-repeat;
+	// margin: 0 auto;
+	// text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__logo {
+		opacity: 0.9;
+	}
+
+	&__copyright {
+		position: absolute;
+		bottom: 70px;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 12px;
+		text-align: left;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+}

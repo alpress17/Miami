@@ -41,16 +41,8 @@
 
 @font-face {
     font-family: 'Didot';
-    src: local('Linotype Didot LT Bold'), local('Linotype-Didot-LT-Bold'),
-        url('../fonts/Linotype Didot LT Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* @font-face {
-    font-family: 'Didot';
     src: local('DidotElder BoldItAlt'), local('DidotElder-BoldItAlt'),
         url('../fonts/DidotElder-BoldItAlt.ttf') format('PostScript');
     font-weight: 700;
-    font-style: normal; */
-/* } */
+    font-style: normal;
+}

@@ -1,7 +1,47 @@
 .gallery {
 	min-height: 1256px;
 	background-color: $submain-color;
-	
+	padding-bottom: 110px;
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__wrapper {
+		margin-top: 66px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.zoom-gallery {
+		&__wrapper {
+			margin-top: 66px;
+		}
+		&__row {
+			margin: 0 -5px;
+			text-align: center;
+			a {
+				padding: 0 5px;
+			}
+		}
+		&__subtitle {
+			margin: 15px 0 30px 0;
+			
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 22px;
+			text-align: left;
+			span {
+				color: $main-color;
+			}
+		}
+		&_visible {
+			display: block;
+		}
+		&_hidden {
+			display: none;
+		}
+	}
 
 /* 	========================= magnific-popup Styles ========================= */
 	.image-source-link {

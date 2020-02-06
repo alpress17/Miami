@@ -10,6 +10,16 @@
 
 $(document).ready(function () {
 
+	/*  ====================== Smooth scroll for navigate menu ====================== */
+	$("#menu").on("click", "a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+		const id = $(this).attr('href'),
+			//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		//анимируем переход на расстояние - top(-30px) за 1500 мс
+		$('body,html').animate({ scrollTop: top - 30 }, 1500);
+	});
 
 	/*  ================================== Modal ================================== */
 	// $("button").on("click", function () {
@@ -72,30 +82,36 @@ $(document).ready(function () {
 	$("input[name=phone]").mask("+7 (999) 999-99-99");
 
 	/*  ================================== Initializing Magnific popup ================================== */
-	$(document).ready(function () {
-		$('.gallery__row').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			closeOnContentClick: false,
-			closeBtnInside: false,
-			mainClass: 'mfp-with-zoom mfp-img-mobile',
-			image: {
-				verticalFit: true,
-				titleSrc: function (item) {
-					return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
-				}
-			},
-			gallery: {
-				enabled: true
-			},
-			zoom: {
-				enabled: true,
-				duration: 300, // don't foget to change the duration also in CSS
-				opener: function (element) {
-					return element.find('img');
-				}
-			}
 
-		});
+	$('.zoom-gallery__row').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function (item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="' + item.el.attr('data-source') + '" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function (element) {
+				return element.find('img');
+			}
+		}
 	});
+
+
+	/*  ================================== button VIEW ALL ================================== */
+	$('body').on('click', '.button_mini', function () {
+		$('.zoom-gallery_hidden').show("slow");
+	});
+
+
 });

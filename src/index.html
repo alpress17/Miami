@@ -31,34 +31,34 @@
 					<img src="img/logo.png" alt="logo" />
 				</a>
 			</header>
-			<nav>
+			<nav id="menu">
 				<div class="container">
 					<ul class="menu">
 						<li class="menu__item">
 							<a href="#" class="menu__link">Home</a>
 						</li>
 						<li class="menu__item">
-							<a href="#AboutUs" class="menu__link">
+							<a href="#about_us" class="menu__link">
 								About us
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#Gallery" class="menu__link">
+							<a href="#gallery" class="menu__link">
 								Gallery
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#Consultation" class="menu__link">
+							<a href="#consultation" class="menu__link">
 								Consultation
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#Testimonials" class="menu__link">
+							<a href="#testimonials" class="menu__link">
 								Testimonials
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#Contacts" class="menu__link">
+							<a href="#contacts" class="menu__link">
 								Contacts
 							</a>
 						</li>
@@ -69,7 +69,7 @@
 	</section>
 
 	<!-- =============================================== SECTION PROMO =============================================== -->
-	<section class="promo">
+	<section class="promo" id="about_us">
 		<div class="container">
 			<div class="promo__wrapper">
 				<h1 class="title">
@@ -124,7 +124,7 @@
 	</section>
 
 	<!-- =============================================== SECTION GALLERY =============================================== -->
-	<section class="gallery">
+	<section class="gallery" id="gallery">
 		<div class="container">
 			<div class="title-block">
 				<div class="title-block__item">
@@ -143,42 +143,68 @@
 				</div>
 			</div>
 
-			<div class="gallery">
+			<div class="gallery__wrapper">
 				<!--Width/height ratio of thumbnail and the main image must match to avoid glitches.
-			If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable. -->
-				<div class="gallery__row">
-					<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms" title="Image 1">
-						<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
-					</a>
-					<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms" title="Image 2">
-						<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
-					</a>
+				If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable. -->
+				<div class="zoom-gallery zoom-gallery_visible">
+					<div class="zoom-gallery__row">
+						<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms"
+							title="Image 1">
+							<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
+						</a>
+						<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms"
+							title="Image 2">
+							<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
+						</a>
+					</div>
+					<div class="zoom-gallery__subtitle">
+						<p>Marina Palms / <span>North Miami Beach, FL 33162</span></p>
+					</div>
 				</div>
-				<div class="gallery__row">
-					<a href="img/gallery/Edition_Residens/img_3.jpg" data-source="img/gallery/Edition_Residens"
-						title="Image 3">
-						<img src="img/gallery/Edition_Residens/img_03.jpg" width="460" height="260">
-					</a>
-					<a href="img/gallery/Edition_Residens/img_4.jpg" data-source="img/gallery/Edition_Residens"
-						title="Image 4">
-						<img src="img/gallery/Edition_Residens/img_04.jpg" width="460px" height="260">
-					</a>
+				<div class="zoom-gallery zoom-gallery_visible">
+					<div class="zoom-gallery__row">
+						<a href="img/gallery/Edition_Residens/img_3.jpg" data-source="img/gallery/Edition_Residens"
+							title="Image 3">
+							<img src="img/gallery/Edition_Residens/img_03.jpg" width="460" height="260">
+						</a>
+						<a href="img/gallery/Edition_Residens/img_4.jpg" data-source="img/gallery/Edition_Residens"
+							title="Image 4">
+							<img src="img/gallery/Edition_Residens/img_04.jpg" width="460px" height="260">
+						</a>
+					</div>
+					<div class="zoom-gallery__subtitle">
+						<p>Edition Residens / <span>Miami Beach, FL 33139</span></p>
+					</div>
 				</div>
-				<div class="gallery__row">
-					<a href="img/gallery/Faena_House/img_5.jpg" data-source="img/gallery/Faena_House" title="Image 5">
-						<img src="img/gallery/Faena_House/img_05.jpg" width="460" height="260">
-					</a>
-					<a href="img/gallery/Faena_House/img_6.jpg" data-source="img/gallery/Faena_House" title="Image 6">
-						<img src="img/gallery/Faena_House/img_06.jpg" width="460px" height="260">
-					</a>
+				<div class="zoom-gallery zoom-gallery_visible">
+					<div class="zoom-gallery__row">
+						<a href="img/gallery/Faena_House/img_5.jpg" data-source="img/gallery/Faena_House"
+							title="Image 5">
+							<img src="img/gallery/Faena_House/img_05.jpg" width="300" height="260">
+						</a>
+						<a href="img/gallery/Faena_House/img_6.jpg" data-source="img/gallery/Faena_House"
+							title="Image 6">
+							<img src="img/gallery/Faena_House/img_06.jpg" width="620px" height="260">
+						</a>
+					</div>
+					<div class="zoom-gallery__subtitle">
+						<p>Faena House/ <span>Miami Beach, FL 33140</span></p>
+					</div>
 				</div>
-				<div class="gallery__row">
-					<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms" title="Image 1">
-						<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
-					</a>
-					<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms" title="Image 2">
-						<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
-					</a>
+				<div class="zoom-gallery zoom-gallery_hidden">
+					<div class="zoom-gallery__row">
+						<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms"
+							title="Image 1">
+							<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
+						</a>
+						<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms"
+							title="Image 2">
+							<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
+						</a>
+					</div>
+					<div class="zoom-gallery__subtitle">
+						<p>Marina Palms / <span>North Miami Beach, FL 33162</span></p>
+					</div>
 				</div>
 			</div>
 			<button class="button button_mini">view all</button>
@@ -187,7 +213,7 @@
 	</section>
 
 	<!-- ============================================ SECTION CONSULTATION ============================================ -->
-	<section class="consultation">
+	<section class="consultation" id="consultation">
 		<div class="container">
 			<div class="title-block">
 				<div class="title-block__item">
@@ -234,7 +260,7 @@
 	</section>
 
 	<!-- ============================================ SECTION TESTIMONIALS ============================================ -->
-	<section class="testimonials">
+	<section class="testimonials" id="testimonials">
 		<div class="container">
 			<div class="title-block">
 				<div class="title-block__item">
@@ -310,7 +336,7 @@
 	</section>
 
 	<!-- ============================================ SECTION CONTACT ============================================ -->
-	<section class="contact">
+	<section class="contact" id="contacts">
 		<div class="container">
 			<div class="title-block">
 				<div class="title-block__item">

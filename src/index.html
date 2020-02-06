@@ -7,9 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Miami</title>
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
-	<link rel="shortcut icon" href="icons/favicon_miami.ico" type="image/png">
+	<link rel="shortcut icon" href="icons/favicon_miami.ico" type="image/png" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<!-- <link rel="stylesheet" href="css/slick.css" /> -->
+	<link rel="stylesheet" href="css/magnific-popup.css" />
 	<link rel="stylesheet" href="css/style.min.css" />
 </head>
 
@@ -25,7 +26,6 @@
 					<a href="#" class="header__call">
 						call to order
 					</a>
-
 				</div>
 				<a href="#" class="logo header__logo">
 					<img src="img/logo.png" alt="logo" />
@@ -67,6 +67,7 @@
 			</nav>
 		</div>
 	</section>
+
 	<!-- =============================================== SECTION PROMO =============================================== -->
 	<section class="promo">
 		<div class="container">
@@ -121,6 +122,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- =============================================== SECTION GALLERY =============================================== -->
 	<section class="gallery">
 		<div class="container">
@@ -140,8 +142,50 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="gallery">
+				<!--Width/height ratio of thumbnail and the main image must match to avoid glitches.
+			If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable. -->
+				<div class="gallery__row">
+					<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms" title="Image 1">
+						<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
+					</a>
+					<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms" title="Image 2">
+						<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
+					</a>
+				</div>
+				<div class="gallery__row">
+					<a href="img/gallery/Edition_Residens/img_3.jpg" data-source="img/gallery/Edition_Residens"
+						title="Image 3">
+						<img src="img/gallery/Edition_Residens/img_03.jpg" width="460" height="260">
+					</a>
+					<a href="img/gallery/Edition_Residens/img_4.jpg" data-source="img/gallery/Edition_Residens"
+						title="Image 4">
+						<img src="img/gallery/Edition_Residens/img_04.jpg" width="460px" height="260">
+					</a>
+				</div>
+				<div class="gallery__row">
+					<a href="img/gallery/Faena_House/img_5.jpg" data-source="img/gallery/Faena_House" title="Image 5">
+						<img src="img/gallery/Faena_House/img_05.jpg" width="460" height="260">
+					</a>
+					<a href="img/gallery/Faena_House/img_6.jpg" data-source="img/gallery/Faena_House" title="Image 6">
+						<img src="img/gallery/Faena_House/img_06.jpg" width="460px" height="260">
+					</a>
+				</div>
+				<div class="gallery__row">
+					<a href="img/gallery/Marina_Palms/img_1.jpg" data-source="img/gallery/Marina_Palms" title="Image 1">
+						<img src="img/gallery/Marina_Palms/img_01.jpg" width="620" height="260">
+					</a>
+					<a href="img/gallery/Marina_Palms/img_2.jpg" data-source="img/gallery/Marina_Palms" title="Image 2">
+						<img src="img/gallery/Marina_Palms/img_02.jpg" width="300px" height="260">
+					</a>
+				</div>
+			</div>
+			<button class="button button_mini">view all</button>
+
 		</div>
 	</section>
+
 	<!-- ============================================ SECTION CONSULTATION ============================================ -->
 	<section class="consultation">
 		<div class="container">
@@ -179,15 +223,16 @@
 				</div>
 				<div class="consultation__item">
 					<form id="consultation-form" class="feed-form" action="#">
-						<input name="name" required placeholder="Name" type="text">
-						<input name="phone" required placeholder="Phone">
-						<input name="email" required placeholder="Email" type="email">
+						<input name="name" placeholder="Name" type="text">
+						<input name="phone" placeholder="Phone">
+						<input name="email" placeholder="Email" type="email">
 						<button class="button button_submit">Consultation</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<!-- ============================================ SECTION TESTIMONIALS ============================================ -->
 	<section class="testimonials">
 		<div class="container">
@@ -263,6 +308,7 @@
 			</div>
 		</div>
 	</section>
+
 	<!-- ============================================ SECTION CONTACT ============================================ -->
 	<section class="contact">
 		<div class="container">
@@ -300,9 +346,10 @@
 				</div>
 				<div class="contact__column">
 					<form id="contact-form" class="feed-form" action="#">
-						<input name="name" required placeholder="Name" type="text" maxlength="40">
-						<input name="email" required placeholder="Email" type="email" maxlength="40">
-						<textarea name=" message" required placeholder="Message" type="text" maxlength="500""></textarea>
+						<input name="name" placeholder="Name" type="text" maxlength="40">
+						<input name="email" placeholder="Email" type="email" maxlength="40">
+						<textarea name="msg" placeholder="Message" type="text"
+							title="Maximum 500 characters"></textarea>
 						<button class=" button button_submit">Write to us</button>
 					</form>
 				</div>
@@ -310,6 +357,7 @@
 		</div>
 	</section>
 
+	<!-- ============================================ SECTION FOOTER ============================================ -->
 	<footer class="footer">
 		<div class="container">
 			<a href="#" class="logo footer__logo">
@@ -319,8 +367,26 @@
 		</div>
 	</footer>
 
+	<!-- ============================================ OVERLAY ============================================ -->
+	<div class="overlay">
+		<div class="modal" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами
+				в ближайшее время!</div>
+		</div>
+	</div>
 
+	<!-- ============================================ SCRIPTS ============================================ -->
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- <script src="js/slick.min.js"></script> -->
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<!-- <script src="js/wow.min.js"></script> -->
 
+	<script src="js/script.js"></script>
 </body>
 
 </html>

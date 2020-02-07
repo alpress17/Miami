@@ -49,6 +49,12 @@
 				color: #ffffff;
 				text-transform: uppercase;
 				text-decoration: none;
+				&:hover {
+					color: $main-color;
+					font-weight: 700;
+					
+					
+				}
 			}
 		}
 	}

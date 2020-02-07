@@ -104,6 +104,27 @@ $(document).ready(function () {
 
 
 	/*  ================================== Form data sending (AJAX) ================================== */
+	$("#contact-form, #consultation-form").submit(function (event) {
+		// Stop form from submitting normally
+		event.preventDefault();
+		// Get some values from elements on the page:
+		const $form = $(this),
+			userName = $form.find("[name='name']").val(),
+			body = $form.find("[name='msg']").val()
+		// Send the data using post
+		const posting = $.post("https://jsonplaceholder.typicode.com/posts", {
+			title: userName,
+			body,
+
+		});
+		// Put the results in a div
+		posting.done(function (data) {
+			console.log(data);
+			$("#result").empty().append(JSON.stringify(data));
+		});
+
+	});
+
 
 
 

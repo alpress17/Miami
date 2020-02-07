@@ -1,12 +1,3 @@
-// for (let i = 1; i < 8; i++) {
-// 	console.log(i);
-// }
-
-// function logging(a, b) {
-// 	console.log( a + b )
-// }
-// logging(3, 5);
-// logging(4, 11);
 
 $(document).ready(function () {
 
@@ -105,20 +96,15 @@ $(document).ready(function () {
 	});
 
 
-	/*  ================================== button VIEW ALL ================================== */
+	/*  ================================== Button VIEW ALL ================================== */
 	$('body').on('click', '.button_mini', function () {
 		$('.zoom-gallery_hidden').show("slow");
 	});
 
 
 
+	/*  ================================== Form data sending (AJAX) ================================== */
 
 
-	$('.button').submit(function () {
-
-		alert('Нажата submit-кнопка');
-
-		return false;
-	});
 
 });

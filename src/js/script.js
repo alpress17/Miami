@@ -55,10 +55,7 @@ $(document).ready(function () {
 					required: true,
 					email: true
 				},
-				msg: {
-					required: true,
-					maxlength: 500
-				},
+				msg: "required",
 			},
 			messages: {
 				name: {
@@ -113,5 +110,15 @@ $(document).ready(function () {
 		$('.zoom-gallery_hidden').show("slow");
 	});
 
+
+
+
+
+	$('.button').submit(function () {
+
+		alert('Нажата submit-кнопка');
+
+		return false;
+	});
 
 });

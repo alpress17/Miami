@@ -10,14 +10,14 @@
 		flex: 1 1 50%;
 		// justify-content: space-between;
 		// align-items: flex-end;
-		
+
 		&:nth-child(1) {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			// width: 380px;
 			font-size: 24px;
-			color: 	#000000;
+			color: #000000;
 			line-height: 30px;
 			text-align: left;
 			padding-left: 7px;
@@ -35,7 +35,7 @@
 		margin-top: 24px;
 		p {
 			margin: 0;
-		}		
+		}
 	}
 	&__adress {
 		margin-top: 30px;

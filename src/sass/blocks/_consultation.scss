@@ -1,13 +1,13 @@
 .consultation {
 	min-height: 539px;
-	padding-bottom: 146px ;
+	padding-bottom: 146px;
 	background-color: #fff;
 	&__wrapper {
 		margin-top: 104px;
 		display: flex;
 		justify-content: space-between;
 	}
-	&__item { 
+	&__item {
 		max-width: 451px;
 		&:nth-child(1) {
 			margin-left: 6px;

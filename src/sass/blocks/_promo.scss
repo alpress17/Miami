@@ -53,11 +53,11 @@
 				margin-left: 20px;
 				line-height: 16px;
 			}
-			li{
+			li {
 				counter-increment: step-counter;
 				// list-style-type: decimal;
 				&:before {
-					content:  counter(step-counter)".";
+					content: counter(step-counter) ".";
 					margin-right: 5px;
 					font-weight: 300;
 					padding: 0;

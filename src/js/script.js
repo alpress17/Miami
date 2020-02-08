@@ -10,9 +10,10 @@ $(document).ready(function() {
 	});
 
 	/*  ================================== Modal ================================== */
-	$("button").on("click", function() {
+	$(".button_submit").on("click", function() {
 		$(".overlay, #thanks").fadeIn("slow");
 	});
+
 	$(".modal__close").on("click", function() {
 		$(".overlay, #thanks").fadeOut("slow");
 	});
@@ -111,13 +112,13 @@ $(document).ready(function() {
 			userName = $form.find("[name='name']").val(),
 			phone = $form.find("[name='phone']").val(),
 			email = $form.find("[name='email']").val(),
-			body = $form.find("[name='msg']").val();
+			message = $form.find("[name='msg']").val();
 		// Send the data using post
 		const posting = $.post("https://jsonplaceholder.typicode.com/posts", {
 			name: userName,
 			phone,
 			email,
-			body
+			message
 		});
 
 		posting.done(function(data) {

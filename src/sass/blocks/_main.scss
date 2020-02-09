@@ -28,50 +28,35 @@
 				color: rgba($main-color, 0.6);
 			}
 		}
-		&__button {
-			width: 122px;
-			height: 18px;
-			line-height: 0;
-			font-size: 16px;
-			padding: 0;
-			text-transform: uppercase;
-			color: rgba(255, 255, 255, 0.6);
-			background-color: transparent;
-			border-bottom: thin dashed rgba(255, 255, 255, 0.34);
-			border-width: 2px;
-			&:hover {
-				border-radius: 50%;
-				border-color: rgba($main-color, 0.34);
-				color: rgba($main-color, 0.6);
-				font-size: 16px;
+	}
+	.menu {
+		padding: 0;
+		margin: 0;
+		margin-top: 575px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style-type: none;
+		flex-wrap: wrap;
+
+		&__item {
+			line-height: 11px;
+			padding-right: 40px;
+			&:last-child {
+				padding-right: 0;
 			}
 		}
-	}
-	nav {
-		margin-top: 575px;
-		.menu {
-			padding: 0;
-			margin: 0;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			list-style-type: none;
-			&__item {
-				line-height: 11px;
-			}
-			a {
-				font-size: 16px;
-				font-weight: 500;
-				line-height: 11px;
-				color: #ffffff;
-				text-transform: uppercase;
-				text-decoration: none;
-
-				&:hover {
-					color: $main-color;
-					font-weight: 700;
-					transition: 0.3s all;
-				}
+		a {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 11px;
+			color: #ffffff;
+			text-transform: uppercase;
+			text-decoration: none;
+			&:hover {
+				color: $main-color;
+				font-weight: 700;
+				transition: 0.3s all;
 			}
 		}
 	}

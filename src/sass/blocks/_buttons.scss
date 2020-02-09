@@ -24,4 +24,20 @@
 	&_mini {
 		width: 188px;
 	}
+	&__order {
+		width: 122px;
+		height: 18px;
+		line-height: 0;
+		font-size: 16px;
+		padding: 0;
+		color: rgba(255, 255, 255, 0.6);
+		background-color: transparent;
+		border-bottom: thin dashed rgba(255, 255, 255, 0.34);
+		border-width: 2px;
+		&:hover {
+			border-radius: 0;
+			border-color: rgba($main-color, 0.34);
+			color: rgba($main-color, 0.6);
+		}
+	}
 }

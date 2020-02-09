@@ -26,14 +26,14 @@
 					<!-- <a href="#" class="header__call">
 						call to order
 					</a> -->
-					<button class="button header__button">call to order</button>
+					<button data-modal="consultation" class="button button__order">call to order</button>
 				</div>
 				<a href="#" class="logo header__logo">
 					<img src="img/logo.png" alt="logo" />
 				</a>
 			</header>
 			<nav id="menu">
-				<div class="container">
+				<div class="wrapper">
 					<ul class="menu">
 						<li class="menu__item">
 							<a href="#" class="menu__link">Home</a>
@@ -371,7 +371,6 @@
 							title="Maximum 500 characters"></textarea>
 						<button class=" button button_submit">Write to us</button>
 					</form>
-					<!-- <div id="result"></div> -->
 				</div>
 			</div>
 		</div>
@@ -387,9 +386,21 @@
 		</div>
 	</footer>
 
-	<!-- ================================================================================================== -->
+	<!-- ========================================= MODAL ================================================= -->
 	<div class="overlay">
-		<div class="modal" id="thanks">
+		<div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Please fill in the form </div>
+			<div class="modal__descr">and we will call you in 10 minutes</div>
+			<form id="order-form" class="feed-form feed-form_mini">
+				<input name="name" placeholder="Name" type="text" maxlength="40">
+				<input name="phone" placeholder="Phone">
+				<input name="email" placeholder="Email" type="email" maxlength="40">
+				<!-- <textarea name="msg" placeholder="Message" type="text" title="Maximum 500 characters"></textarea> -->
+				<button class=" button button_submit">Consultation</button>
+			</form>
+		</div>
+		<div class="modal modal_mini" id="thanks">
 			<div class="modal__close">&times;</div>
 			<div class="modal__subtitle">Thank you for your request!</div>
 			<div class="modal__descr">Our Manager will contact you soon!</div>
@@ -408,7 +419,6 @@
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/wow.min.js"></script>
-
 	<script src="js/script.js"></script>
 </body>
 

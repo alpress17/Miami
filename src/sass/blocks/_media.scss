@@ -128,11 +128,27 @@
 	.consultation {
 		padding-bottom: 70px;
 		&__wrapper {
-			margin-top: 50px;
+			margin-top: 30px;
 			flex-direction: column;
 		}
 		&__item {
-			margin-top: 30px;
+			margin-left: 0;
+			&:nth-child(1) {
+				margin: 0;
+			}
+			&:nth-child(2) {
+				margin-top: 10px;
+			}
+		}
+		&__subtitle {
+			text-align: center;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		&__descr {
+			margin-top: 20px;
+			font-size: 14px;
+			line-height: 18px;
 		}
 	}
 
@@ -148,17 +164,52 @@
 	}
 
 	.contact {
+		min-height: 580px;
 		&__wrapper {
 			display: block;
-			padding: 40px 0 40px 0;
+			padding: 20px 0 0px 0;
+			margin: 0 auto;
 		}
 		&__column {
+			margin: 0 auto;
 			margin-bottom: 20px;
+			flex-direction: column;
+
+			&:nth-child(1) {
+				font-size: 16px;
+				padding: 0;
+			}
+			&:nth-child(2) {
+				align-items: center;
+			}
+		}
+
+		&__mail {
+			line-height: 16px;
+		}
+		&__phones {
+			margin-top: 10px;
+			line-height: 16px;
+		}
+		&__adress {
+			margin-top: 10px;
+			line-height: 16px;
+		}
+		.span_lh60 {
+			line-height: 16px;
+		}
+		.feed-form {
+			textarea {
+				font-size: 12px;
+			}
 		}
 	}
 
 	.footer {
 		min-height: 200px;
+		&__copyright {
+			bottom: 20px;
+		}
 	}
 
 	.modal {
